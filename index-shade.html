@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+<style>
+html{font-size: 20px;}
+.bar{position: fixed; right: 0; left: 0; z-index: 10; height: 2.2rem; padding-right: 0.5rem; padding-left: 0.5rem; background-color: #f7f7f8; -webkit-backface-visibility: hidden; backface-visibility: hidden;}
+.bar:after{content: ''; position: absolute; left: 0; bottom: 0; right: auto; top: auto; height: 1px; width: 100%; background-color: #e7e7e7; display: block; z-index: 15; -webkit-transform-origin: 50% 100%; transform-origin: 50% 100%;}
+.bar-tab{bottom: 0; width: 100%; height: 2.5rem; padding: 0; table-layout: fixed;}
+.bar-tab:before{content: ''; position: absolute; left: 0; top: 0; bottom: auto; right: auto; height: 1px; width: 100%; background-color: #e7e7e7; display: block; z-index: 15; -webkit-transform-origin: 50% 0%; transform-origin: 50% 0%;}
+.bar-tab:after{display: none;}
+.bar-tab .tab-item{position: relative; display: table-cell; width: 1%; height: 2.5rem; color: #929292; text-align: center; vertical-align: middle;}
+/*轮播*/
+.scroll-part{background-color: #fff; height: auto; position: relative; width: 100%;}
+.owl-carousel .owl-wrapper::after{clear: both; content: "."; display: block; height: 0; line-height: 0; visibility: hidden;}
+.owl-carousel{display: none; position: relative; width: 100%;}
+.owl-carousel .owl-wrapper{display: none; position: relative; transform: translate3d(0px, 0px, 0px);}
+.owl-carousel .owl-wrapper-outer{overflow: hidden; position: relative; width: 100%;}
+.owl-carousel .owl-wrapper-outer.autoHeight{transition: height 500ms ease-in-out 0s;}
+.owl-carousel .owl-item{float: left;}
+.owl-controls .owl-page, .owl-controls .owl-buttons div{cursor: pointer;}
+.owl-controls{-moz-user-select: none;}
+.grabbing{cursor: url("grabbing.png") 8 8, move;}
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item{backface-visibility: hidden; transform: translate3d(0px, 0px, 0px);}
+.owl-theme .owl-controls{margin-top: 10px; text-align: center;}
+.owl-theme .owl-controls .owl-buttons div{background: #869791 none repeat scroll 0 0; border-radius: 30px; color: #fff; display: inline-block; font-size: 12px; margin: 5px; opacity: 0.5; padding: 3px 10px;}
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{opacity: 1; text-decoration: none;}
+.owl-theme .owl-controls .owl-page{display: inline-block;}
+.owl-theme .owl-controls .owl-page span{background: #fff none repeat scroll 0 0; border-radius: 20px; display: block; height: 10px; margin: 5px 3px; opacity: 0.5; width: 10px;}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{background: #2993ce none repeat scroll 0 0; opacity: 1;}
+.owl-theme .owl-controls .owl-page span.owl-numbers{border-radius: 30px; color: #fff; font-size: 12px; height: auto; padding: 2px 10px; width: auto;}
+.owl-item.loading{background: rgba(0, 0, 0, 0) url("AjaxLoader.gif") no-repeat scroll center center; min-height: 150px;}
+.scroll-part .scroll-pic img{display: block; height: auto; width: 100%;}
+.scroll-part .owl-theme .owl-controls{bottom: 0; position: absolute; text-align: center; width: 100%;}
+</style>
+</head>
+<body>
+<div class="topfixed">
+  <header class="header"> <a href="/" class="a_city"> <i class="all_bg"></i> <span>上海</span> </a>
+    <h2>万家社区</h2>
+    <a href="/" class="a_in">物业登录</a> </header>
+</div>
+<div class="content" style="padding:2.2rem 0 2.5rem;">
+  <div class="banner"> <img src="images/14.png"> </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide index-category">
+        <ul class="ul-list">
+          <li> <a href="/"> <i><img src="images/1.png" width="40" height="40"></i> <span>物业缴费</span> </a> </li>
+          <li> <a href="/"> <i><img src="images/2.png" width="40" height="40"></i> <span>停车缴费</span> </a> </li>
+          <li> <a href="/"> <i><img src="images/3.png" width="40" height="40"></i> <span>快递代送</span> </a> </li>
+          <li> <a href="/"> <i><img src="images/4.png" width="40" height="40"></i> <span>抄表达人</span> </a> </li>
+          <li> <a href="/"> <i><img src="images/5.png" width="40" height="40"></i> <span>党费缴纳</span> </a> </li>
+          <li> <a href="/"> <i><img src="images/6.png" width="40" height="40"></i> <span>社区之家</span> </a> </li>
+          <li> <a href="/"> <i><img src="images/9.png" width="40" height="40"></i> <span>访客管理</span> </a> </li>
+          <li> <a href="/"> <i><img src="images/10.png" width="40" height="40"></i> <span>业主认证</span> </a> </li>
+        </ul>
+      </div>
+      <div class="swiper-slide index-category">
+        <ul class="ul-list">
+          <li> <a href="/"> <i><img src="images/10.png" width="40" height="40"></i> <span>业主认证</span> </a> </li>
+        </ul>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="itemlist">
+    <div class="itemtop">
+      <h3>信息速递</h3>
+    </div>
+    <div class="iteminfo">
+      <div class="infolist clearfix"> <a class="all_bg notice a01"></a>
+        <dl>
+          <dt><a href="/">小区通知</a></dt>
+          <dd><a href="/">【停水通知】接物业通知，本小区将于25号停水</a></dd>
+        </dl>
+      </div>
+      <div class="infolist clearfix n_bd"> <a class="all_bg live a01"> <i class="cur"></i> </a>
+        <dl>
+          <dt><a href="/">我的生活</a></dt>
+          <dd><a href="/">【快递通知】您的快递到啦！物业小哥马不停蹄为您送达！</a></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div class="banner"> <img src="images/14.png"> </div>
+</div>
+<nav class="bar bar-tab footer">
+    <a class="tab-item wjsq cur" href="#">
+        <i class="all_bg"></i>
+        <span class="tab-label">万家社区</span>
+    </a>
+    <a class="tab-item wd" href="#">
+        <i class="all_bg"></i>
+        <span class="tab-label">我的</span>
+    </a>
+    <p class="tab-item hsh">
+        <i class="all_bg"></i>
+        <span class="tab-label">离开</span>
+    </p>
+</nav>
+<div id="bg-gray"></div>
+<div class="ad-index">
+  <img src="images/ad-index.jpg" width="100%">
+  <i class="all_bg close"></i>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+  var bggray = $("#bg-gray");
+  var modal = $("#modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+});
+</script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        slidesPerColumn: 1,
+        paginationClickable: true,
+        spaceBetween: 0
+    });
+    </script>
+</body>
+</html>

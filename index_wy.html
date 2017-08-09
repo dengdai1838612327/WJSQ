@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/wy-layout.css"/>
+<link rel="stylesheet" href="SUI/css/sm.min.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+</head>
+<body class="bfff">
+<div class="page-group">
+  <div class="page page-current">
+    <div class="topfixed">
+        <header class="header">
+            <a href="/" class="a_city">
+                <i class="all_bg_daishou icon-location"></i>
+                <span>金杨五街坊</span>
+            </a>
+            <a href="###" class="a_in" onclick="return submit();">
+                消息
+            </a>
+        </header>
+    </div>
+    <div class="content index">
+        <div class="banner">
+            <img src="images/bg.jpg">
+        </div>
+        <div class="index-category">
+            <ul class="ul-list">
+                <li>
+                    <div>
+                        <a href="/">
+                            <img src="images/wy-1.png" width="52" height="46">
+                            <span>代送快递</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="/">
+                            <img src="images/wy-2.png" width="52" height="46">
+                            <span>代收快递</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="/">
+                            <img src="images/wy-3.png" width="52" height="46">
+                            <span>查找快递</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="/">
+                            <img src="images/wy-4.png" width="52" height="46">
+                            <span>领取快递</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="/">
+                            <img src="images/wy-5.png" width="52" height="46">
+                            <span>访客签到</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="/">
+                            <img src="images/wy-6.png" width="52" height="46">
+                            <span>账单催缴</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="/">
+                            <img src="images/wy-7.png" width="52" height="46">
+                            <span>直接收款</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="/">
+                            <img src="images/wy-8.png" width="52" height="46">
+                            <span>派工处理</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bd-no">
+                        <a href="/">
+                            <img src="images/wy-9.png" width="52" height="46">
+                            <span>任务接单</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bd-no">
+                        <a href="/">
+                            <img src="images/wy-10.png" width="52" height="46">
+                            <span>通讯录</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg-gray top0 none"></div>
+    <div class="zdcj-modal">
+      <div class="modal-tit">请选择支付方式</div>
+      <div class="modal-con">
+        <ul class="need-ul">
+          <li class="need active">现金<i class="check checked"></i></li>
+          <li class="need">通联钱包</li>
+          <li class="need">支付宝</li>
+          <li class="need">微信支付</li>
+          <li class="need">银联卡支付</li>
+        </ul>
+      </div>
+    </div>
+    <nav class="bar bar-tab footer daishou">
+      <a class="tab-item active" href="#">
+        <i class="all_bg_daishou icon-nbshou"></i>
+        <span class="tab-label">首页</span>
+      </a>
+      <a class="tab-item active" href="#">
+        <i class="all_bg_daishou icon-nbsong"></i>
+        <span class="tab-label">我的</span>
+      </a>
+      <a class="tab-item active" href="#">
+        <i class="all_bg_daishou icon-nbcha"></i>
+        <span class="tab-label">快收</span>
+      </a>
+      <a class="tab-item active" href="#">
+        <i class="all_bg_daishou icon-nbget"></i>
+        <span class="tab-label">关闭</span>
+      </a>
+    </nav>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function submit() {
+  var bggray = $(".bg-gray");
+  var modal = $(".zdcj-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>

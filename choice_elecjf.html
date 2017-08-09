@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>待缴费账单</title>
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+        <meta content="telephone=no" name="format-detection" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/common.css" rel="stylesheet"/>
+        <link href="css/wy-layout.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="SUI/css/sm.min.css">
+        <link rel="stylesheet" href="SUI/css/sm-extend.min.css">
+    </head>
+    <body>
+        <div class="page-group">
+          <div class="page page-current">
+            <header class="bar bar-nav header">
+              <a class="button button-link button-nav pull-left button-left-w-change" href="/demos/card" data-transition='slide-out'>
+                <span class="icon icon-left"></span>
+              </a>
+              <h1 class="title">待缴费账单</h1>
+            </header>
+            <div class="main content" style="bottom: 4.5rem;">
+                <div class="wrap">
+                    <div class="waiting-content">
+                        <div class="drop-box">
+                            <label for=""><i class="all_bg"></i></label>
+                            <span>金杨五街坊1号101户</span>
+                        </div>
+                        <div class="mywait-list">
+                            <div class="store-choice">
+                              <i class="check checked"></i>
+                              <span>上海唐镇通联物业</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <i class="check"></i>
+                                    <div class="text-m">
+                                       <p>2015年6月 电费<br/>费用类型:电费</p>
+                                    </div>
+                                    <span class="text-r">￥120.00</span>
+                                    <em class="all_bg"></em>
+                                </li>
+                                <li>
+                                    <i class="check"></i>
+                                    <div class="text-m">
+                                        <p>2015年6月 电费</p>
+                                        <p>费用类型:电费</p>
+                                    </div>
+                                    <span class="text-r">￥120.00</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-content-1">
+                            <div class="check-box">
+                                <i class="check checked"></i>
+                                <span class="all">全选</span>
+                            </div>
+                            <div class="price-box">
+                                <span class="hj">合计：</span>
+                                <i class="Num">￥240.00</i>
+                                <a class="button-jf" onclick="return submit();">缴费去咯！</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="bar bar-tab footer">
+                <a class="tab-item wjsq cur" href="#">
+                    <i class="all_bg"></i>
+                    <span class="tab-label">万家社区</span>
+                </a>
+                <a class="tab-item wd" href="#">
+                    <i class="all_bg"></i>
+                    <span class="tab-label">我的</span>
+                </a>
+                <a class="tab-item hsh" href="#">
+                    <i class="all_bg"></i>
+                    <span class="tab-label">荟生活</span>
+                </a>
+            </nav>
+            <div id="bg-gray"></div>
+            <div class="xq-modal jf-modal" id="modal" style="display:none;">
+              <p class="modal-msg">您所选账单待确认，请联系物业公司处理后，再行支付。可先行支付无提示标记的账单。<br>物业公司电话：<a href="/">123456</a></p>
+              <p class="modal-btn">
+                <span class="yes one">确定</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+function submit() {
+  var bggray = $("#bg-gray");
+  var modal = $("#modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>

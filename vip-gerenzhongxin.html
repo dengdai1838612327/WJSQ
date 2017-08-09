@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>7_1个人中心</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/yz-layout.css"/>
+<link href="css/center.css" rel="stylesheet"/>
+<link rel="stylesheet" href="SUI/css/sm.min.css">
+<link rel="stylesheet" href="SUI/css/sm-extend.min.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+</head>
+<body>
+<div class="page-group">
+  <div class="page page-current">
+    <header class="bar bar-nav header">
+      <a class="button button-link button-nav pull-left button-left-w-change" href="/demos/card" data-transition='slide-out'>
+        <span class="icon icon-left"></span>
+      </a>
+      <h1 class="title">个人中心</h1>
+    </header>
+    <div class="main content yz-dailing vp" style="bottom: 2.5rem;">
+        <div class="head-img">
+            <img alt="" src="images/vip_banner.png" width="45" height="45"/>
+            <span>159****0430</span>
+        </div>
+        <div class="wuliu-info">
+            <div class="wrap">
+                <h4>我的社区</h4>
+            </div>
+            <ul class="vp-ul">
+                <li>
+                    <a href="">我的房产</a>
+                </li>
+                <li>
+                    <a href="">我的生活</a>
+                </li>
+                <li>
+                    <a href="">我的抄表</a>
+                </li>
+                <li>
+                    <a href="">我的授权</a>
+                </li>
+            </ul>
+        </div>
+        <div class="wuliu-info">
+            <div class="wrap">
+                <h4>我的订单</h4>
+            </div>
+            <ul class="vp-ul">
+                <li>
+                    <a href="">物业缴费订单</a>
+                </li>
+                <li>
+                    <a href="">停车缴费订单</a>
+                </li>
+                <li>
+                    <!-- <i class="icon icon-right pull-right"></i> -->
+                    <i class="icon icon-down pull-right"></i>
+                    <a href="">其他缴费订单</a>
+                    <ul class="other-list">
+                        <li>党费缴费订单</li>
+                        <li>快递代送订单</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="wuliu-info logout" onclick="return logout();">
+            <a href="###">退出登录</a>
+        </div>
+    </div>
+    <nav class="bar bar-tab footer">
+        <a class="tab-item wjsq cur" href="#">
+            <i class="all_bg"></i>
+            <span class="tab-label">万家社区</span>
+        </a>
+        <a class="tab-item wd" href="#">
+            <i class="all_bg"></i>
+            <span class="tab-label">我的</span>
+        </a>
+        <a class="tab-item hsh" href="#">
+            <i class="all_bg"></i>
+            <span class="tab-label">荟生活</span>
+        </a>
+    </nav>
+    <div id="bg-gray"></div>
+    <div class="xq-modal logout-modal" id="modal" style="display:none;">
+      <p class="modal-msg">确定退出登录？</p>
+      <p class="modal-btn">
+        <span class="yes">确认</span>
+        <span class="no">取消</span>
+      </p>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function logout() {
+  var bggray = $("#bg-gray");
+  var modal = $("#modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>

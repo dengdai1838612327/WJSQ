@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>个人中心（快递账户）</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link href="css/common.css" rel="stylesheet"/>
+        <link href="css/wy-layout.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="SUI/css/sm.min.css">
+    </head>
+    <body class="bfff">
+        <div class="page">
+            <header class="bar header bar-nav">
+                <a class="button button-link button-nav pull-left button-left-w-change" href="/demos/card" data-transition='slide-out'>
+                    <span class="icon icon-left"></span>
+                </a>
+                <h1 class="title">快递设置</h1>
+            </header>
+            <div class="content infinite-scroll" data-distance="100">
+                <!-- 这里是页面内容区 -->
+                <div class="list-block kdset">
+                    <ul>
+                        <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">小区名称</div>
+                                    <span class="pull-right">芳华苑小区</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">账户余额</div>
+                                    <span class="pull-right"><em class="emp">60</em>元</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-container">
+                        <li class="kd-list fir clearfix">
+                            <div class="list-l">
+                                <i class="all_bg_daishou icon-cirred"></i>
+                                <div class="info">
+                                    <span>今天</span>
+                                    <span class="b-gray">21:30</span>
+                                </div>
+                            </div>
+                            <div class="list-r">
+                                <span class="text-red">+1元</span>
+                                <span class="b-gray">代送快递申请-15103513225</span>
+                            </div>
+                        </li>
+                        <li class="kd-list clearfix">
+                            <div class="list-l">
+                                <i class="all_bg_daishou icon-cirblue"></i>
+                                <div class="info">
+                                    <span>今天</span>
+                                    <span class="b-gray">21:30</span>
+                                </div>
+                            </div>
+                            <div class="list-r">
+                                <span class="text-blue">-1元</span>
+                                <span class="b-gray">代送快递申请-15103513225</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="infinite-scroll-preloader">
+                    <div class="preloader"></div>
+                </div>
+            </div>
+        </div>
+        <script type='text/javascript' src='SUI/js/zepto.min.js' charset='utf-8'></script>
+        <script type='text/javascript' src='SUI/js/sm.min.js' charset='utf-8'></script>
+        <script>
+        $(function() {
+            // 加载flag
+      var loading = false;
+      // 最多可加载的条目
+      var maxItems = 100;
+
+      // 每次加载添加多少条目
+      var itemsPerLoad = 10;
+
+      function addItems(number, lastIndex) {
+              // 生成新条目的HTML
+              var html = '';
+              for (var i = lastIndex + 1; i <= lastIndex + number; i++) {
+                  html += '<li class="kd-list clearfix"><div class="list-l"><i class="all_bg_daishou icon-cirblue"></i><div class="info"><span>今天</span><span class="b-gray">21:30</span></div></div><div class="list-r"><span class="text-blue">-' + i + '元</span><span class="b-gray">代送快递申请-15103513225</span></div></li>';
+              }
+              // 添加新条目
+              $('.infinite-scroll .list-container').append(html);
+          }
+          //预先加载20条
+      addItems(itemsPerLoad, 0);
+
+      // 上次加载的序号
+
+      var lastIndex = 10;
+
+      // var lastIndex = 0;
+      // //文档专用事件 updateContent
+      // $(document).on('updateContent', '.infinite-scroll', function() {
+      //     //预先加载20条
+      //     addItems(itemsPerLoad, 0);
+      //     lastIndex = 20;
+      // });
+
+      // 注册'infinite'事件处理函数
+      $(document).on('infinite', '.infinite-scroll',function() {
+
+          // 如果正在加载，则退出
+          if (loading) return;
+
+          // 设置flag
+          loading = true;
+
+          // 模拟1s的加载过程
+          setTimeout(function() {
+              // 重置加载flag
+              loading = false;
+
+              if (lastIndex >= maxItems) {
+                  // 加载完毕，则注销无限加载事件，以防不必要的加载
+                  $.detachInfiniteScroll($('.infinite-scroll'));
+                  // 删除加载提示符
+                  $('.infinite-scroll-preloader').remove();
+                  return;
+              }
+
+              // 添加新条目
+              addItems(itemsPerLoad, lastIndex);
+              // 更新最后加载的序号
+              lastIndex = $('.list-container li').length;
+              //容器发生改变,如果是js滚动，需要刷新滚动
+              $.refreshScroller();
+          }, 1000);
+      });
+    });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,492 @@
+@charset "utf-8";
+/* 个人中心页面 */
+.vp .wrap {
+    padding-top:6px;
+    padding-bottom:6px;
+}
+.vp .wuliu-info {
+    border-bottom:1px solid #ddd;
+    margin-bottom:16px;
+}
+.vp .wuliu-info h4{
+    font-size:14px;
+    color: #333;
+    font-weight: bold;
+}
+.head-img {
+    background:url("../images/vip_bg.png");
+    height: 95px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    background-size:320px 95px;
+    line-height:95px;
+}
+.head-img img {
+    vertical-align:middle;
+}
+.vp-ul {
+    margin-left: 26px;
+}
+.vp-ul li {
+    line-height:38px;
+    border-bottom:1px solid #e0e0e0;
+}
+.vp-ul li a {
+    font-size: 14px;
+    color: #656565;
+    display: block;
+}
+.vp-ul li:last-child {
+    border-bottom:none;
+}
+.vp-ul li .icon{
+    margin-right: 10px;
+}
+.other-list{
+    background-color: #fff;
+}
+.vp-ul .other-list li{
+    line-height: 30px;
+    font-size: 13px;
+    color: #666;
+    border: none;
+    margin-left: 15px;
+}
+/* 我的生活页面 */
+.vp-list li {
+    background: #fff;
+    vertical-align: middle;
+    font-size: 14px;
+    padding: 15px 15px 15px 25px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e0e0e0;
+}
+.vp-list li p {
+    margin:0;
+}
+.t-g {
+    color:#a8a8a8;
+}
+.vp-list li p em.kuaidi{
+    color: rgb(255,66,0);
+}
+.vp-list li p em.zhangdan{
+    color: rgb(103,226,60);
+}
+.vp-list li p em.chaobiao{
+    color: rgb(255,201,7);
+}
+/* 我的授权页面 */
+.yz-dailing .vp-sli {
+    margin-bottom:5px;
+    border-bottom:1px solid #ddd;
+}
+.yz-dailing .vp-sli .yz-label{
+    width: 75px;
+}
+.yz-dailing .vp-shouquan{
+    bottom: 40px;
+}
+.yz-dailing .vp-shouquan .list-block {
+    border-bottom:none;
+}
+.add-btm {
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    height: 45px;
+    background-color: #3994fc;
+    z-index: 20;
+}
+.add-btm a {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 45px;
+    width: 100%;
+    text-align: center;
+}
+.add-btm i {
+    display: inline-block;
+    width: 17px;
+    height: 20px;
+    background-position: -115px 0;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.vp-shouquan .wrap {
+    position:relative;
+    margin-top: 5px;
+}
+.vp-shouquan .delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 0 0 12px;
+    height:auto;
+    width:auto;
+    margin-right:10px;
+}
+.vp-shouquan .delete i {
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background-position: -38px 0;
+    z-index: 1;
+}
+/* 我的授权-2页面 */
+.vpsq-input {
+    padding: 15px;
+    position: relative;
+}
+.h30 {
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+}
+.h30 label {
+    display: block;
+    float: left;
+    width: 15%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 14px;
+}
+.h30 input,.h30 select {
+    width: 85%;
+    display: block;
+    float: right;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+    padding-left: 10px;
+    color: #adadad;
+    background-color: transparent;
+    position: relative;
+    z-index: 20;
+}
+.h30.sel .icon-down{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+}
+.h30 .ip44 {
+    width:52%;
+}
+.h30 .veri {
+    font-size:13px;
+    width:30%;
+    display:inline-block;
+    color:#fff;
+    background:#3a94fd;
+    border-radius:4px;
+    text-align:center;
+    padding-left:0;
+    padding-right: 0;
+    margin-left:3%;
+    border: none;
+}
+.h30 .veri.gray{
+    color: #333;
+    background-color: #eee;
+}
+.vpsq-input .confirm-btn {
+    margin-top:20px;
+    padding: 0;
+}
+/* 7_8 缴费详情订单 7_9快递代送订单 */
+.vp-ddxq span, .vp-ddxq p {
+    font-size:14px;
+}
+.vp-ddxq .iteminfo p {
+    margin:0;
+}
+.item-top {
+    padding: 10px 0 20px 30px;
+    color: #666;
+}
+.pl-20 {
+    padding-left:20px;
+}
+.ml-5 {
+    margin-left:5px;
+}
+.multext {
+    display: inline-block;
+    width: 74%;
+    vertical-align: text-top;
+    line-height: 12px;
+}
+.item-top li {
+    line-height:30px;
+}
+/* 7_7 缴费订单页面 */
+.vp-jfddli {
+    border-bottom:1px solid #ddd;
+    margin-bottom:5px;
+    padding:15px;
+    background:#fff;
+}
+.vp-jfddli p, .vp-jfddli span {
+    font-size:13px;
+}
+.vp-jfddli p {
+    margin:0;
+}
+.s-t {
+    display:inline-block;
+    width:3.2rem;
+    text-align:right;
+}
+.text-l {
+    float:left;
+    margin-right:5px;
+}
+
+.sicon {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    margin: 0 auto;
+    text-align: center;
+}
+.icon-tick {
+    background-position: -174px -150px;
+}
+.icon-chatick {
+    background-position: -120px -94px;
+}
+.icon-loadtick {
+    background-position: -67px -150px;
+}
+/* 7-10 快递订单详情 */
+.vp-ddxq .mb5 {
+    margin-bottom:5px;
+}
+.vp-ddxq .btn {
+    background:#fff;
+    color:#3a94fd;
+    border:1px solid #3a94fd;
+}
+/* 7-11 抄表记录页面 */
+.page .vp-nav {
+    background:#fff;
+    position:fixed;
+    border-bottom: 1px solid #eee;
+}
+.vp-nav .title {
+    color:#3a94fd;
+}
+.vp-nav .button-left-change{
+    width: 35px;
+}
+.vp-nav .button-right-change{
+    width: 35px;
+}
+.vp-nav select{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    opacity: 0;
+    height: 2.2rem;
+    margin: 0 20%;
+}
+.vp-cbjl {
+    font-size:13px;
+    margin-top: 2.2rem;
+}
+.l-b {
+    background: #fff;
+}
+.box-l {
+    float:left;
+    width:30%;
+    border-right:1px solid #eee;
+    position:relative;
+}
+.all_bg_chaobiao2 {
+    background:url("../images/sdm2.png");
+    position:absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -17px;
+    margin-right: -17px;
+    background-size: 106px 67px;
+    height:34px;
+    width:35px;
+}
+.shui_cur .all_bg_chaobiao2 {
+    background-position: 0px -33px;
+}
+.dian_cur .all_bg_chaobiao2 {
+    background-position: -35px -33px;
+}
+.mei_cur .all_bg_chaobiao2 {
+    background-position: -71px -33px;
+}
+.box-r {
+    width:69%;
+    float:right;
+    border-bottom:1px solid #eee;
+}
+.n_bm {
+    border-bottom:none;
+}
+.box-l, .box-r {
+    text-align:center;
+    height:60px;
+}
+.mt12 {
+    margin-top:12px;
+    font-size:13px;
+}
+.mt6 {
+    margin-top:6px;
+}
+.f16 {
+    font-size:16px;
+}
+.box-l span, .box-r span {
+    display:block;
+}
+.l-b .all_bg_chaobiao {
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    top: 50%;
+    right: 0;
+    margin-right: -26px;
+    z-index: 1;
+    margin-top: -26px;
+}
+.l-b .text-hide {
+    display: inline-block;
+    width: 86%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* 支付完成页面 */
+.bgfff {
+    background:#fff;
+}
+.tick-banner {
+    margin:35px 0;
+    text-align:center;
+    font-size: 18px;
+}
+.tick-banner i {
+    width: 36px;
+    height: 36px;
+    background-position: -142px -46px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.text-content{
+    width: 70%;
+    margin: 0 auto
+}
+.text-content span {
+    display:block;
+    font-size:15px;
+    padding-left:10%;
+    color:#787777;
+}
+.orange {
+    color:#ff5b11;
+}
+/*支付失败*/
+.tick-banner .fail i {
+    width: 30px;
+    height: 30px;
+    background-position: -112px -50px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+/*订单处理中*/
+.tick-banner .loading i {
+    width: 36px;
+    height: 36px;
+    background-position: -76px -46px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+/*通知*/
+.notice ul{
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding-left: 20px;
+}
+.notice ul li{
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 15px 15px 5px;
+}
+.notice ul li:last-child{
+    border-bottom: none;
+}
+.notice .new-notice{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #f00;
+    position: absolute;
+    left: -10px;
+    top: 20px;
+}
+.notice ul li p{
+    margin: 0;
+    font-size: 14px;
+}
+.notice-tit-date{
+    float: right;
+}
+.notice ul li p.notice-tit{
+    margin-bottom: 5px;
+}
+.notice-tit .notice-tit-name{
+    font-weight: bold;
+}
+.notice-con{
+    color: #656565;
+}
+/*通知详情*/
+.noticexq{
+    background-color: #fff;
+    padding: 20px;
+    font-size: 14px;
+}
+.noticexq p{
+    margin: 0;
+}
+.noticexq-tit{
+    font-weight: bold;
+}
+.noticexq p.noticexq-time{
+    margin-bottom: 10px;
+}
+.noticexq-time,.noticexq-con{
+    color: #656565;
+}
+/*20161215*/
+.h1000{
+    height: 1000px;
+}
+/*个人中心退出*/
+.vp .logout.wuliu-info{
+    border: none;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.vp .logout a{
+    font-size: 15px;
+    color: #333;
+}
