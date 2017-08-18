@@ -133,14 +133,14 @@
           <li>
             <i class="all_bg fenqipay"></i>
             <span class="way-text">分期支付<em>（订单满600元可享受12期低息）</em></span>
-            <i class="unchecked fr"></i>
+            <i class="unchecked fr" onclick="return submit();"></i>
           </li>
         </ul>
       </div>
       <div class="zhifu" onclick="return create_ewm_modal();">立即支付</div>
     </div>
     <div id="bg-gray"></div>
-    <div class="xq-modal fenqi-modal" id="modal" style="display:none;">
+    <!-- <div class="xq-modal fenqi-modal" id="modal" style="display:none;">
       <p class="modal-msg">
         <span>很抱歉，您的订单未满600元，不能进行分期付款</span>
         <input type="button" value="确认">
@@ -148,7 +148,7 @@
       <p class="modal-btn">
         <span class="fenqi-tishi"><em>*温馨提示：</em>试试合并账单低息分期吧～</span>
       </p>
-    </div>
+    </div> -->
     <div class="xq-modal create-ewm-modal" style="display: none;">
       <p class="create-ewm2-tishi">温馨提示：留下您的手机号码后，即可通过万家社区查询相关订单详情，感谢您的支持！</p>
       <div class="create-ewm2-form">
@@ -175,6 +175,12 @@
       <div class="saoma-img">
         <img src="images/vericode.png" width="150" height="150">
       </div>
+    </div>
+    <div class="xq-modal" id="modal" style="display:none;">
+      <p class="modal-msg three">该笔订单可在【通联钱包】最新版本内享受立减优惠，可进入“我的-关于我们-版本更新”检测更新。</p>
+      <p class="modal-btn">
+        <span class="yes one">知道了</span>
+      </p>
     </div>
   </div>
 </div>
