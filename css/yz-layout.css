@@ -1002,6 +1002,9 @@ i.check {
 .fenqi-choice ul li .fenqipay{
 	background-position: -115px bottom;
 }
+.fenqi-choice ul li .cardcard{
+	background-position: -102px -269px;
+}
 .fenqi-choice ul li .way-text{
 	display: inline-block;
 	float: left;
