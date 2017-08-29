@@ -1251,7 +1251,7 @@ i.check {
 .create-ewm1-form.st-add li.ssq-input select{
 	padding-right: 5px;
 }
-.create-ewm1-form.st-add li.ssq-input{
+.create-ewm1-form.st-add li.ssq-input.w32{
 	margin-bottom: 0;
 }
 .create-ewm1-btn.log-btn{
