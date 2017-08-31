@@ -445,6 +445,9 @@ i.check {
 	text-align: center;
 	z-index: 2000;
 }
+.zhifu.gray{
+	background-color: #999;
+}
 /* yin origin pic */
 .wuliu-list {
 	border-left: 1px solid #ccc;
