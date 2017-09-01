@@ -24,38 +24,73 @@
       <h1 class="title">新增缴费地址</h1>
     </header>
     <div class="main content" style="bottom: 45px;">
-      <div class="st-add">
+      <div class="add-tab">
+        <span class="fl">按地址信息添加</span>
+        <span class="fr tab-on">按身份编号添加</span>
+      </div>
+      <div class="st-add mt55">
         <!-- <h3>请设置地址</h3> -->
         <ul class="ssq-flex">
-          <li class="ssq-input w32">
+          <li class="ssq-input w50">
             <select>
               <option value="省">省</option>
               <option value="省">省</option>
             </select>
           </li>
-          <li class="ssq-input w32">
+          <li class="ssq-input w50">
             <select>
               <option value="市">市</option>
               <option value="市">市</option>
-            </select>
-          </li>
-          <li class="ssq-input w32">
-            <select>
-              <option value="区">区</option>
-              <option value="区">区</option>
             </select>
           </li>
         </ul>
+        <!-- <ul class="ssq-flex">
+          <li class="ssq-input w32">
+            <select>
+              <option value="省">省</option>
+              <option value="省">省</option>
+            </select>
+          </li>
+          <li class="ssq-input w32">
+            <select>
+              <option value="市">市</option>
+              <option value="市">市</option>
+            </select>
+          </li>
+          <li class="ssq-input w32">
+            <select>
+              <option value="区">区</option>
+              <option value="区">区</option>
+            </select>
+          </li>
+        </ul> -->
         <ul>
-          <li class="ssq-input high-search">
+          <!-- <li class="ssq-input high-search">
             <select>
               <option value="">小区</option>
               <option value="">小区</option>
             </select>
             <span onclick="return submit();">高级搜索</span>
+          </li> -->
+          <li class="ssq-input">
+            <select>
+              <option value="">请选择机构</option>
+              <option value="">小区</option>
+            </select>
+          </li>
+          <li class="ssq-input high-search">
+            <input type="text" placeholder="请输入身份编号">
+            <span>确认</span>
+            <p class="error">请输入完整的身份编号</p>
+          </li>
+          <li class="ssq-input">
+            <select>
+              <option value="">请选择对应地址</option>
+              <option value="">小区</option>
+            </select>
           </li>
         </ul>
-        <ul class="ssq-flex">
+        <!-- <ul class="ssq-flex">
           <li class="ssq-input w32">
             <select>
               <option value="">楼号</option>
@@ -74,7 +109,7 @@
               <option value="">户号</option>
             </select>
           </li>
-        </ul>
+        </ul> -->
       </div>
       <div>
         <h3 class="tag-tit">请选择关系</h3>

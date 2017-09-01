@@ -1968,3 +1968,43 @@ header a i.icon-nme {
 .sort-tab ul li.cur i.icon4{
   background-position: -358px -146px;
 }
+/*24800--增加身份编号认证流程*/
+.add-tab{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  overflow: hidden;
+  position: fixed;
+  top: 2.2rem;
+  z-index: 1;
+}
+.add-tab span{
+  display: inline-block;
+  width: 35%;
+  height: 40px;
+  margin: 0 7%;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+.add-tab span.tab-on{
+  color: #41adfb;
+  border-bottom: 2px solid #41adfb;
+}
+.st-add.mt55{
+  margin-top: 55px;
+}
+.st-add li.ssq-input.w50 {
+  width: 48%;
+}
+.st-add li.ssq-input.high-search input {
+  width: 70%;
+}
+.st-add li.ssq-input.high-search p.error{
+  margin: 0;
+  color: #ff7714;
+  font-size: 13px;
+  padding-left: 5px;
+}
