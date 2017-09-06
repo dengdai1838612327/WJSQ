@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>报停详情</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/wy-layout.css"/>
+<link rel="stylesheet" type="text/css" href="css/yz-layout.css"/>
+<link rel="stylesheet" href="SUI/css/sm.min.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+</head>
+<body>
+<div class="page-group">
+  <div class="page page-current">
+    <header class="bar bar-nav header">
+      <a class="button button-link button-nav pull-left button-left-w-change" href="/demos/card" data-transition='slide-out'>
+        <span class="icon icon-left"></span>
+      </a>
+      <h1 class="title">停供</h1>
+    </header>
+    <div class="main content bx" style="bottom: 40px;">
+      <div class="block">
+        <div class="tit">报停详情</div>
+        <div class="con">
+          <ul class="bx-info">
+            <li>
+              <label class="fl">报停编号：</label>
+              <span class="fl">00000023</span>
+            </li>
+            <li>
+              <label class="fl">小区名称：</label>
+              <span class="fl">仁恒滨江</span>
+            </li>
+            <li>
+              <label class="fl">地址：</label>
+              <span class="fl">1-1-101</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="block">
+        <div class="tit">当前状态</div>
+        <div class="con">
+          <!-- <p class="hn-status">供暖公司审核中，请耐心等待</p> -->
+          <!-- <p class="hn-status">你的供暖申请以撤销，请知悉</p> -->
+          <!-- <p class="hn-status">反馈信息：<em class="blue">读取物业在商服平台中填写的内容</em></p> -->
+          <p class="hn-status">你的停暖申请被拒绝，如有问题请电话联系</p>
+          <p class="hn-status">反馈信息：<em class="blue">读取物业端填写内容</em></p>
+        </div>
+      </div>
+      <div class="block">
+        <span>有任何问题，请联系总部<a href="###">12345</a></span>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="zhifu" onclick="return submit();">撤销</div> -->
+  <div class="zhifu" onclick="return hnbt_modal();">撤销</div>
+  <div id="bg-gray"></div>
+  <div class="xq-modal" id="modal" style="display:none;">
+    <p class="modal-msg">确定撤销吗？</p>
+    <p class="modal-btn">
+      <span class="yes">确认</span>
+      <span class="no">取消</span>
+    </p>
+  </div>
+  <div class="xq-modal jypz-modal hnbt-modal" style="display: none;">
+    <div class="jypz-title">
+      <h3>暂停供（用）热协议</h3>
+      <a class="close all_bg_daishou"></a>
+    </div>
+    <div class="text2">
+      <ul>
+        <li>
+          <label>报停编号</label>
+          <span>2017011356</span> </li>
+        <li>
+          <label>用户姓名</label>
+          <span>蓝精灵</span> </li>
+        <li>
+          <label>房屋编号</label>
+          <span>222333</span> </li>
+        <li>
+          <label>用户地址</label>
+          <span>万家社区一期万家社区一期万家社区一期万家社区一期万家社区一期万家社区一期万家社区一期万家社区一期万家社区一期万家社区一期</span> </li>
+        <li>
+          <label>建筑面积</label>
+          <span>75.92m²</span> </li>
+        <li>
+          <label>申请时间</label>
+          <span>2016年9月5日</span> </li>
+        <li>
+          <label>申请方式</label>
+          <span>停暖</span> </li>
+        <li>
+          <label>供停年度</label>
+          <span>自2016年11月2日至2017年8月20日</span> </li>
+        <li>
+          <label>受理人</label>
+          <span>白雪</span> </li>
+        <li>
+          <label>联系方式</label>
+          <span>13699669966</span> </li>
+      </ul>
+      <p class="hn-z z"><img src="images/huaneng-zhang.png" width="130" height="53"></p>
+    </div>
+</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function submit() {
+  var bggray = $("#bg-gray");
+  var modal = $("#modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+function hnbt_modal() {
+  var bggray = $("#bg-gray");
+  var modal = $(".hnbt-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>

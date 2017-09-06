@@ -1677,6 +1677,9 @@ i.check {
 	position: relative;
 	padding-right: 15px;
 }
+.bx .block ul.sel li:last-child{
+	border-bottom: none;
+}
 .bx .block ul.sel li.wp50{
 	width: 50%;
 }
@@ -1685,6 +1688,9 @@ i.check {
 }
 .bx .block label{
 	color: #333;
+}
+.bx .block label em.f12{
+	font-size: 12px;
 }
 .bx .block select{
 	background: transparent;
@@ -1771,6 +1777,10 @@ i.check {
 }
 .bx .block .con{
 	padding: 10px 10px 10px 0;
+}
+.bx .block .con .hn-status{
+	margin: 0;
+	line-height: 30px;
 }
 .bx .block .bx-info li{
 	overflow: hidden;
@@ -2033,6 +2043,16 @@ em.checked {
 	margin: 0;
 	line-height: 25px;
 }
+.xq-modal.jypz-modal.hnbt-modal{
+  height: 405px;
+  margin: -65% 0 0 -45%;
+}
+.text2 p.z.hn-z{
+	margin: 0 0 5px 0;
+	width: 130px;
+	height: 53px;
+	right: 0;
+}
 /*阜阳智慧社区*/
 .b75d4f8{
 	background: #75d4f8 url(../images/fy-index-bg.png) 0 0 no-repeat;
@@ -2156,6 +2176,21 @@ em.checked {
 }
 .yibao-list .yibao-con{
 	text-indent: 28px;
+	margin: 0;
+}
+.yibao-list table{
+	margin-bottom: 15px;
+}
+.yibao-list table caption{
+	text-align: center;
+}
+.yibao-list table tr th,
+.yibao-list table tr td{
+	border: 1px solid #999;
+	font-size: 12px;
+	padding-left: 3px;
+}
+.yibao-list table tr td p{
 	margin: 0;
 }
 .fy-footer img{
