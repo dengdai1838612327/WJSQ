@@ -1928,13 +1928,13 @@ header a i.icon-nme {
   color: #666;
 }
 .sort-tab ul li{
-  width: 25%;
+  width: 20%;
   float: left;
 }
 .sort-tab ul li i{
   display: block;
-  width: 37px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: 10px auto;
 }
 .sort-tab ul li span{
@@ -1944,7 +1944,7 @@ header a i.icon-nme {
 .sort-tab ul li.cur span{
   color: #1296db;
 }
-.sort-tab ul li i.icon1{
+/*.sort-tab ul li i.icon1{
   background-position: right -36px;
 }
 .sort-tab ul li i.icon2{
@@ -1967,6 +1967,36 @@ header a i.icon-nme {
 }
 .sort-tab ul li.cur i.icon4{
   background-position: -358px -146px;
+}*/
+.sort-tab ul li i.icon1{
+  background-position: -313px -35px;
+}
+.sort-tab ul li i.icon2{
+  background-position: -313px -76px;
+}
+.sort-tab ul li i.icon3{
+  background-position: -313px -117px;
+}
+.sort-tab ul li i.icon4{
+  background-position: -313px -158px;
+}
+.sort-tab ul li i.icon5{
+  background-position: -313px -198px;
+}
+.sort-tab ul li.cur i.icon1{
+  background-position: -267px -35px;
+}
+.sort-tab ul li.cur i.icon2{
+  background-position: -267px -76px;
+}
+.sort-tab ul li.cur i.icon3{
+  background-position: -267px -117px;
+}
+.sort-tab ul li.cur i.icon4{
+  background-position: -267px -158px;
+}
+.sort-tab ul li.cur i.icon5{
+  background-position: -267px -198px;
 }
 /*24800--增加身份编号认证流程*/
 .add-tab{
