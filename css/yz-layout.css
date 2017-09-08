@@ -1227,7 +1227,9 @@ i.check {
 /*按户生成二维码*/
 .create-ewm1{
 	width: 90%;
-	margin: 0 auto;
+	margin: 0 5%;
+	position: absolute;
+	top: 20%;
 }
 .create-ewm1 p{
 	font-size: 16px;
@@ -1260,10 +1262,6 @@ i.check {
 }
 .create-ewm1-form.st-add li.ssq-input.w32{
 	margin-bottom: 0;
-}
-.create-ewm1-btn.log-btn{
-	position: static;
-	margin-top: 15px;
 }
 .create-ewm-modal.xq-modal{
 	font-size: 14px;
