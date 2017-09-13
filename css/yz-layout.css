@@ -2264,3 +2264,113 @@ em.checked {
 	margin: 0;
 	color: #666;
 }
+/*智能门禁*/
+.bg-blue .page{
+	background-color: #3a94fd;
+}
+.a_in.wp35{
+	width: 35%;
+}
+.door-ewm .tit{
+	background-color: #f2f2f2;
+	height: 45px;
+	line-height: 45px;
+	margin: 20px 15px 0;
+	font-size: 14px;
+	color: #3a95fd;
+	padding: 0 10px;
+	border-radius: 3px 3px 0 0;
+}
+.door-ewm .con{
+	background-color: #fff;
+	margin: 0 15px;
+	border-radius: 0 0 3px 3px;
+}
+.door-ewm .con .ewm{
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+}
+.door-ewm .con .ewm img{
+	display: block;
+	margin: 20px auto 0;
+}
+.door-ewm .con .ewm p{
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+}
+.door-ewm .con .link a{
+	display: block;
+	font-size: 14px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 10px;
+}
+.door-ewm .con .link a.gray{
+	color: #333;
+}
+.btn-tj span.border-white{
+	border: 1px solid #fff;
+}
+.shouquan-info{
+	font-size: 14px;
+}
+.shouquan-info .tips{
+	height: 35px;
+	line-height: 35px;
+	padding-left: 15px;
+	margin: 0;
+	color: #666;
+	font-size: 12px;
+}
+.shouquan-info .info-form{
+	background-color: #fff;
+}
+.shouquan-info li{
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+	margin: 0 15px;
+	height: 40px;
+	line-height: 40px;
+}
+.shouquan-info li:last-child{
+	border-bottom: none;
+}
+.shouquan-info li label{
+	float: left;
+	width: 25%;
+	color: #666;
+}
+.shouquan-info li input{
+	border: none;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	color: #666;
+}
+.shouquan-info li input.wp70{
+	width: 70%;
+}
+.shouquan-info li input.wp45{
+	width: 45%;
+}
+.shouquan-info li select{
+	float: left;
+	border: none;
+	height: 40px;
+	line-height: 40px;
+	background-color: #fff;
+	color: #666;
+}
+.shouquan-info li input[type='button']{
+	width: 30%;
+	height: 25px;
+	line-height: 25px;
+	margin: 7px 0;
+	float: right;
+	padding: 0;
+	border: 1px solid #3a94fd;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #666;
+}

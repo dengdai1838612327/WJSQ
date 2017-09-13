@@ -337,6 +337,10 @@ address, h1, h2, h3, h4, h5, h6, i, li, span {
 	margin-bottom: 6px;
 	min-height: 129px
 }
+.door-banner{
+	min-height: auto;
+	background: none;
+}
 .banner img {
 	display: block;
 	height: auto;
