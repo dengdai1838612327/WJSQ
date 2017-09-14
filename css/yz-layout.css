@@ -1787,7 +1787,7 @@ i.check {
 }
 .bx .block .bx-info li label{
 	width: 30%;
-	text-align: right;
+	text-align: left;
 }
 .bx .block .bx-info li span{
 	width: 70%;
@@ -2154,6 +2154,21 @@ em.checked {
 	width: 90%;
 	color: #666;
 }
+.yibao-list .sqml-box{
+	margin: 50px auto;
+}
+.yibao-list a.sqml{
+	display: block;
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	background-color: #fabb1a;
+	margin: 20px auto;
+}
 .yibao-list .yibao-tit{
 	font-size: 14px;
 	display: inline-block;
@@ -2178,6 +2193,7 @@ em.checked {
 }
 .yibao-list table{
 	margin-bottom: 15px;
+	width: 100%;
 }
 .yibao-list table caption{
 	text-align: center;
@@ -2190,6 +2206,30 @@ em.checked {
 }
 .yibao-list table tr td p{
 	margin: 0;
+}
+.yibao-list .flow dt{
+	text-align: center;
+	font-size: 14px;
+	margin: 10px 0;
+	color: #333;
+	font-weight: bold;
+}
+.yibao-list .flow dd .dd-box{
+	border: 1px solid #666;
+	border-radius: 5px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px;
+}
+.yibao-list .flow .flow-tit{
+	text-align: center;
+	color: #333;
+	font-weight: bold;
+}
+.yibao-list .flow .icon-down{
+	position: relative;
+	left: 50%;
+	margin-left: -7px;
 }
 .fy-footer img{
 	display: block;
