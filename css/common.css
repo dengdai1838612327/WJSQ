@@ -1478,3 +1478,13 @@ i.check.mr5 {
 	top: 5px;
 	right: 5px;
 }
+/*#26181*/
+.bill-num{
+	color: #3d96fb;
+	font-size: 14px;
+	clear: both;
+}
+.bill-num p{
+	line-height: 25px;
+	margin: 0;
+}
