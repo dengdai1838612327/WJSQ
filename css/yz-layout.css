@@ -1779,6 +1779,7 @@ i.check {
 .bx .block .con .hn-status{
 	margin: 0;
 	line-height: 30px;
+	word-break: break-all;
 }
 .bx .block .bx-info li{
 	overflow: hidden;
@@ -2323,12 +2324,13 @@ em.checked {
 }
 .door-ewm .con{
 	background-color: #fff;
-	margin: 0 15px;
+	margin: 0 15px 20px;
 	border-radius: 0 0 3px 3px;
 }
 .door-ewm .con .ewm{
 	overflow: hidden;
 	border-bottom: 1px solid #ddd;
+	position: relative;
 }
 .door-ewm .con .ewm img{
 	display: block;
@@ -2413,4 +2415,305 @@ em.checked {
 	border-radius: 5px;
 	background-color: #fff;
 	color: #666;
+}
+.shouquan-succ{
+	vertical-align: middle;
+	margin-right: 10px;
+	width: 23px;
+	height: 25px;
+	background-position: -224px 0;
+}
+.noadd-img img{
+	display: block;
+	margin: 45px auto;
+}
+.nodata-p.blue{
+	color: #4196fb;
+}
+.local-now p{
+	color: #41adfb;
+	font-size: 12px;
+	margin: 0 15px;
+	line-height: 30px;
+}
+.fujin.cityList {
+  width: 100%
+}
+.fujin dl dd a {
+  width: 85%
+}
+.fujin span {
+  display: block;
+  float: left;
+  width: 15%;
+  color: #666
+}
+.door-modal{
+	width: 90%;
+	height: 244px;
+	background-color: #fff;
+	border-radius: 5px;
+	position: fixed;
+	top: 50%;
+	left: 5%;
+	margin-top: -122px;
+	z-index: 2002;
+	font-size: 14px;
+	overflow: hidden;
+}
+.door-modal .modal-tit{
+	border-bottom: 1px dashed #ddd;
+	text-align: center;
+	margin-top: 10px;
+}
+.door-modal .modal-tit .icon-yes{
+	width: 22px;
+	height: 22px;
+	background-position: -224px -32px;
+	vertical-align: middle;
+}
+.door-modal .modal-tit span{
+	line-height: 50px;
+}
+.door-modal .modal-con{
+	color: #666;
+	padding: 20px 10px 0;
+	height: 148px;
+}
+.door-modal .modal-con.no-tit{
+	padding-top: 50px;
+}
+.door-modal .modal-con p{
+	margin: 0;
+	line-height: 25px;
+}
+.door-modal .modal-footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 35px;
+	border-top: 1px solid #ddd;
+}
+.door-modal .modal-footer input{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding: 0;
+	color: #41adfb;
+	background-color: #fff;
+	border: none;
+}
+.shouquan-info li select.wp70{
+	width: 70%;
+}
+.shouquan-info li .icon-right{
+	float: right;
+}
+.door-modal .modal-tit.n_bd{
+	border-bottom: none;
+	line-height: 25px;
+}
+.door-modal .modal-con.n_pd{
+	padding: 0 10px;
+	height: auto;
+}
+.door-modal .modal-con label{
+	border-bottom: 1px solid #41adfb;
+	line-height: 25px;
+	display: inline-block;
+}
+.door-modal .modal-con .fir-list{
+	clear: both;
+	border-bottom: 1px solid #ddd;
+	margin-top: 10px;
+}
+.door-modal .modal-con .fir-list li{
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border-bottom: 1px solid #41adfb;
+	margin-right: 10px;
+	margin-bottom: -1px;
+}
+.door-modal .modal-con .sec-list{
+	overflow-y: scroll;
+	height: 150px;
+}
+.door-modal .modal-con .sec-list.no-fir{
+	height: 180px;
+}
+.door-modal .modal-con .sec-list li{
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #ddd;
+}
+.door-modal .modal-con .sec-list li:last-child{
+	border-bottom: none;
+}
+.door-modal .add-purpose{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	bottom: 0;
+	color: #41adfb;
+}
+.door-modal .add-purpose i{
+	width: 17px;
+	height: 17px;
+	background-position: -55px -147px;
+	vertical-align: text-bottom;
+	margin-right: 5px;
+}
+.xq-modal .purpose-input{
+	background-color: #f0f0f0;
+	border: none;
+	border-radius: 5px;
+	width: 90%;
+	height: 35px;
+	font-size: 14px;
+	text-align: center;
+}
+.bg-img .page{
+	background: url(../images/door-bg.png) 0 0 no-repeat;
+	background-size: cover;
+}
+.visitor-list{
+	padding: 10px;
+}
+.visitor-list ul li{
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 25px;
+}
+.visitor-list ul li label{
+	color: #666;
+	float: left;
+	width: 35%;
+}
+.visitor-list ul li span{
+	float: left;
+	width: 65%;
+}
+.msg-modal{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 155px;
+	height: 150px;
+	margin-top: -77px;
+	margin-left: -75px;
+	background-color: #fff;
+	border-radius: 5px;
+	z-index: 2002;
+}
+.msg-modal i{
+	width: 40px;
+	height: 37px;
+	background-position: -224px -160px;
+	display: block;
+	margin: 30px auto 20px;
+}
+.msg-modal p{
+	margin: 0;
+	font-size: 14px;
+	text-align: center;
+}
+em.img-bg{
+	background-color: #333;
+	opacity: .9;
+	z-index: 2001;
+	color: #fff;
+	text-align: center;
+	line-height: 170px;
+	font-size: 14px;
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	margin-left: -85px;
+}
+.share-btm{
+	width: 100%;
+	height: 115px;
+	position: fixed;
+	bottom: 0;
+	background-color: #fff;
+	z-index: 2;
+	font-size: 14px;
+}
+.share-btm .tit{
+	border-bottom: 1px dashed #ddd;
+	line-height: 35px;
+	height: 35px;
+	text-align: center;
+	color: #666;
+}
+.share-btm .con{
+	overflow: hidden;
+}
+.share-btm .con .share-item{
+	float: left;
+	width: 50%;
+}
+.share-btm .con .share-item i{
+	display: block;
+	margin: 15px auto 5px;
+	width: 37px;
+	height: 37px;
+}
+.share-btm .share-item .wechat{
+	background-position: -224px -75px;
+}
+.share-btm .share-item .short-msg{
+	background-position: -224px -117px;
+}
+.share-btm .share-item p{
+	text-align: center;
+	margin: 0;
+}
+.visitor.bx .block{
+	position: relative;
+}
+.visitor.bx .block .con label{
+	width: 25.5%;
+}
+.visitor.bx .block .con span{
+	width: 74.5%;
+}
+.visitor.bx .block.del-block .con label{
+	width: 30%;
+}
+.visitor.bx .block.del-block .con span{
+	width: 70%;
+}
+.visitor.bx .del-block .con{
+	padding-right: 0;
+	width: 85%;
+	float: left;
+}
+.visitor .del{
+	width: 15%;
+	height: 100%;
+	background-color: #d0d0d0;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	right: 0;
+}
+.visitor .del span{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -14px;
+	margin-top: -20px;
+}
+.shouquan-info .tips.red{
+	color: #f00;
+}
+.shouquan-info .tips.lh20{
+	height: auto;
+	line-height: 20px;
 }

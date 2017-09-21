@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>添加访客</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/yz-layout.css"/>
+<link rel="stylesheet" href="SUI/css/sm.min.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+</head>
+<body>
+<div class="page-group">
+  <div class="page page-current">
+    <header class="bar bar-nav header">
+      <a class="button button-link button-nav pull-left button-left-w-change" href="/demos/card" data-transition='slide-out'>
+        <span class="icon icon-left"></span>
+      </a>
+      <h1 class="title">添加访客</h1>
+    </header>
+    <div class="content">
+      <div class="shouquan-info">
+        <p class="tips">邀请码信息</p>
+        <div class="info-form">
+          <ul>
+            <li>
+              <label>预约社区</label>
+              <select class="wp70">
+                <option>请选择和访客预约的地址</option>
+                <option>父母</option>
+                <option>子女</option>
+                <option>租户</option>
+              </select>
+              <i class="icon icon-right"></i>
+            </li>
+            <li>
+              <label>访客目的</label>
+              <select class="wp70">
+                <option>请选择访客目的</option>
+                <option>父母</option>
+                <option>子女</option>
+                <option>租户</option>
+              </select>
+              <i class="icon icon-right"></i>
+            </li>
+            <li>
+              <label>访客时间</label>
+              <select class="wp70">
+                <option>请选择邀请码开始时间</option>
+                <option>父母</option>
+                <option>子女</option>
+                <option>租户</option>
+              </select>
+              <i class="icon icon-right"></i>
+            </li>
+            <li>
+              <label>有效天数</label>
+              <input type="text" placeholder="1天">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="shouquan-info">
+        <p class="tips">访客个人信息</p>
+        <div class="info-form">
+          <ul>
+            <li>
+              <label>姓名</label>
+              <input type="text" class="wp70" placeholder="请输入访客姓名">
+            </li>
+            <li>
+              <label>手机号码</label>
+              <input type="text" class="wp70" placeholder="请选择访客手机号码">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="zhifu" onclick="return submit();">确定</div>
+</div>
+<div id="bg-gray"></div>
+<!-- <div class="door-modal" style="display: none;">
+  <div class="modal-tit n_bd">
+    <h5>预约地址</h5>
+  </div>
+  <div class="modal-con n_pd">
+    <label>请选择</label>
+    <ul class="fir-list clearfix">
+      <li>上海市</li>
+      <li>浦东新区</li>
+    </ul>
+    <ul class="sec-list">
+      <li>唐镇</li>
+      <li>金桥镇</li>
+      <li>川沙镇</li>
+      <li>周浦镇</li>
+      <li>机场</li>
+      <li>唐镇</li>
+      <li>金桥镇</li>
+      <li>川沙镇</li>
+      <li>周浦镇</li>
+      <li>机场</li>
+    </ul>
+  </div>
+</div> -->
+<!-- <div class="door-modal" style="display: none;">
+  <div class="modal-tit n_bd">
+    <h5>预约地址</h5>
+  </div>
+  <div class="modal-con n_pd">
+    <label>请选择</label>
+    <ul class="sec-list no-fir">
+      <li>通联1小区</li>
+      <li>通联2小区</li>
+      <li>通联3小区</li>
+      <li>通联4小区</li>
+      <li>通联5小区</li>
+      <li>通联6小区</li>
+      <li>通联7小区</li>
+      <li>通联8小区</li>
+      <li>通联9小区</li>
+      <li>通联10小区</li>
+    </ul>
+  </div>
+</div> -->
+<div class="door-modal" style="display: none;">
+  <div class="modal-tit n_bd">
+    <h5>访客目的</h5>
+  </div>
+  <div class="modal-con n_pd">
+    <label>请选择</label>
+    <ul class="sec-list">
+      <li>快递</li>
+      <li>亲朋</li>
+      <li>拜访</li>
+      <li>外卖</li>
+      <li>开会</li>
+      <li>快递</li>
+      <li>亲朋</li>
+      <li>拜访</li>
+      <li>外卖</li>
+      <li>开会</li>
+    </ul>
+    <div class="add-purpose" onclick="return addPurpose();">
+      <i class="all_bg_daishou"></i>
+      <span>新增</span>
+    </div>
+  </div>
+</div>
+<div class="xq-modal add-purpose" style="display:none;">
+  <p class="modal-msg">
+    <input type="text" class="purpose-input" placeholder="请输入来访目的">
+  </p>
+  <p class="modal-btn">
+    <span class="yes">确认</span>
+    <span class="no">取消</span>
+  </p>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function submit() {
+  var bggray = $("#bg-gray");
+  var modal = $(".door-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+function addPurpose(){
+  $(".door-modal").hide();
+  $(".add-purpose").show();
+}
+</script>
+</body>
+</html>
