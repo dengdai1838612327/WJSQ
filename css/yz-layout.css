@@ -2287,7 +2287,9 @@ em.checked {
 }
 /*pos扫码*/
 .xq-modal.saoma-modal.saoma-modal2{
+	width: 90%;
 	height: 360px;
+	margin-left: -45%;
 	margin-top: -120px;
 }
 .saoma-msg.f18{
@@ -2716,4 +2718,217 @@ em.img-bg{
 .shouquan-info .tips.lh20{
 	height: auto;
 	line-height: 20px;
+}
+/*晋城电力*/
+.header.jcdl-header{
+	background-color: #049787;
+}
+.banner.jcdl-banner{
+	margin-bottom: 0;
+}
+.jcdl-icon{
+	text-align: center;
+	height: 130px;
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+.jcdl-icon img{
+	margin: 20px 0 10px;
+}
+.jcdl-icon p{
+	color: #049787;
+	font-size: 14px;
+	margin: 0;
+}
+.jcdl-form{
+	margin-bottom: 10px;
+}
+.jcdl-form .form-tit{
+	color: #049787;
+	font-size: 14px;
+	margin-left: 10px;
+	line-height: 30px;
+}
+.jcdl-input{
+	background-color: #fff;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+}
+.jcdl-input .user-num{
+	width: 25px;
+	height: 18px;
+	background-position: -171px -78px;
+	vertical-align: text-top;
+}
+.jcdl-input .amount{
+	width: 25px;
+	height: 25px;
+	background-position: -171px -101px;
+	vertical-align: middle;
+}
+.jcdl-input input{
+	border: none;
+	width: 90%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	padding: 10px;
+}
+.jcdl-tips{
+	color: #999;
+	margin: 10px;
+	font-size: 12px;
+}
+.jcdl-btn{
+	margin: 0 10px;
+}
+.jcdl-btn input{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	background-color: #049787;
+	font-size: 14px;
+	padding: 0;
+	border: 1px solid #049787;
+	border-radius: 5px;
+}
+.jcdl-block{
+	background-color: #fff;
+	margin-bottom: 25px;
+}
+.jcdl-block ul li{
+	overflow-y: hidden;
+	border-bottom: 1px solid #ddd;
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+.jcdl-block ul li label{
+	float: left;
+	width: 30%;
+	font-size: 14px;
+}
+.jcdl-block ul li span{
+	float: right;
+	width: 70%;
+	text-align: right;
+	font-size: 13px;
+	overflow: hidden;
+	overflow-wrap: normal;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.jcdl-record-icon {
+  display: inline-block;
+  font-size: 0;
+  width: 40px;
+  height: 2.2rem;
+  float: right;
+}
+.jcdl-record-icon i{
+	width: 17px;
+	height: 24px;
+	background-position: -171px top;
+	position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -12px;
+}
+.jcdl-record{
+	background-color: #fff;
+}
+.jcdl-record li{
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+}
+.jcdl-record li .fee-type{
+	float: left;
+	width: 45px;
+	height: 46px;
+	background-position: -171px -28px;
+	margin: 15px 10px 15px 0;
+}
+.jcdl-record li .record-con{
+	float: left;
+	width: 60%;
+}
+.record-con p{
+	margin: 0;
+	line-height: 25px;
+	font-size: 14px;
+	color: #666;
+	width: 100%;
+	overflow: hidden;
+	overflow-wrap: normal;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.jcdl-record li .record-status{
+	float: right;
+	color: #ff9b0e;
+	font-size: 14px;
+	line-height: 75px;
+}
+.jcdl-order{
+	margin: 10px 15px;
+	background-color: #fff;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #666;
+	padding: 20px;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+.jcdl-order .tit{
+	height: 40px;
+	line-height: 30px;
+	text-align: center;
+	border-bottom: 1px dashed #666;
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+.jcdl-order .con li{
+	overflow: hidden;
+	line-height: 25px;
+}
+.jcdl-order .con li label{
+	float: left;
+	width: 30%;
+}
+.jcdl-order .con li span{
+	float: left;
+	width: 70%;
+}
+.jcdl-pay-res{
+	margin: 35px 0 45px;
+  text-align: center;
+  font-size: 18px;
+}
+.jcdl-pay-res i.succ{
+	width: 36px;
+	height: 36px;
+	background-position: -171px -131px;
+	vertical-align: middle;
+  margin-right: 5px;
+}
+.jcdl-pay-res i.fail{
+	width: 37px;
+	height: 37px;
+	background-position: -171px -171px;
+	vertical-align: middle;
+  margin-right: 5px;
+}
+.jcdl-btn.two input{
+	width: 49%;
+}
+.jcdl-btn input.white{
+	color: #049787;
+	background-color: #fff;
+}
+.jcdl-pay .jcdl-tips{
+	margin-top: 20px;
 }
