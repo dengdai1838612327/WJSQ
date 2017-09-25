@@ -2770,8 +2770,8 @@ em.img-bg{
 .jcdl-input input{
 	border: none;
 	width: 90%;
-	height: 40px;
-	line-height: 40px;
+	height: 38px;
+	line-height: 38px;
 	font-size: 14px;
 	padding: 10px;
 }
@@ -2781,7 +2781,7 @@ em.img-bg{
 	font-size: 12px;
 }
 .jcdl-btn{
-	margin: 0 10px;
+	margin: 0 10px 10px;
 }
 .jcdl-btn input{
 	width: 100%;
@@ -2880,8 +2880,6 @@ em.img-bg{
 	font-size: 14px;
 	color: #666;
 	padding: 20px;
-	border-right: 1px solid #999;
-	border-bottom: 1px solid #999;
 }
 .jcdl-order .tit{
 	height: 40px;
