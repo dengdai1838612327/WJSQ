@@ -1048,8 +1048,8 @@ i.check {
 /*交易凭证弹框*/
 .xq-modal.jypz-modal{
 	width: 90%;
-	height: 300px;
-	margin: -50% 0 0 -45%;
+	height: auto;
+	margin: -65% 0 0 -45%;
 	top: 50%;
 }
 .jypz-modal .jypz-title {
@@ -2709,8 +2709,9 @@ em.img-bg{
 	line-height: 30px;
 	padding: 0;
 	border-radius: 5px;
-	background-color: #3d96fe;
-	color: #fff;
+	border: 1px solid #3d96fe;
+	background-color: #fff;
+	color: #3d96fe;
 	position: absolute;
 	left: 0;
 	top: 50%;
