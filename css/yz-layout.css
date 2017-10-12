@@ -1729,9 +1729,9 @@ i.check {
 	line-height: 25px;
 }
 .bx .block .photo{
-	overflow: hidden;
 	font-size: 0;
 	padding: 10px 0 20px;
+	height: 105px;
 }
 .bx .block .photo .preview{
 	float: left;
@@ -1764,11 +1764,12 @@ i.check {
 }
 .bx .block .photo .preview i.all_bg{
 	position: absolute;
-	top: 0;
-	right: 0;
-	width: 12px;
-	height: 12px;
-	background-position: -144px -19px;
+	top: -7px;
+	right: -7px;
+	width: 15px;
+	height: 15px;
+	background-position: -89px -114px;
+	z-index: 10;
 }
 .bx .block .tit{
 	border-bottom: 1px solid #dbdbdb;
@@ -2622,6 +2623,26 @@ em.checked {
 	font-size: 14px;
 	text-align: center;
 }
+.wechat-modal{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 110px;
+	z-index: 2002;
+}
+.wechat-modal i{
+	float: right;
+	width: 58px;
+	height: 69px;
+	background-position: -157px -211px;
+	margin-right: 10px;
+}
+.wechat-modal p{
+	clear: both;
+	color: #fff;
+	margin: 0;
+	text-align: right;
+}
 em.img-bg{
 	background-color: #333;
 	opacity: .9;
@@ -2671,6 +2692,12 @@ em.img-bg{
 }
 .share-btm .share-item .short-msg{
 	background-position: -224px -117px;
+}
+.share-btm .share-item .wechat.gray{
+	background-position: -224px -200px;
+}
+.share-btm .share-item .short-msg.gray{
+	background-position: -224px -240px;
 }
 .share-btm .share-item p{
 	text-align: center;
@@ -2723,6 +2750,11 @@ em.img-bg{
 .shouquan-info .tips.lh20{
 	height: auto;
 	line-height: 20px;
+}
+.door-open-modal p{
+	line-height: 130px;
+	margin: 0;
+	text-align: center;
 }
 /*晋城电力*/
 .header.jcdl-header{
