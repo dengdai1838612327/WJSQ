@@ -2874,6 +2874,12 @@ em.img-bg{
   right: 15px;
   margin-top: -12px;
 }
+.jcdl-record-link{
+	display: inline-block;
+	float: right;
+	height: 2.2rem;
+	font-size: 13px;
+}
 .jcdl-record{
 	background-color: #fff;
 }
