@@ -1141,7 +1141,8 @@ i.check {
 .log-form .pwd i.all_bg{
 	background-position: -81px -255px;
 }
-.log-form .h33p input[type='text']{
+.log-form .h33p input[type='text'],
+.log-form .h33p input[type='password']{
 	width: 83%;
 	height: 96%;
 	border: none;
@@ -2355,7 +2356,8 @@ em.checked {
 	color: #333;
 }
 .btn-tj span.border-white{
-	border: 1px solid #fff;
+	color: #3a94fd;
+	background-color: #fff;
 }
 .shouquan-info{
 	font-size: 14px;
@@ -2374,7 +2376,7 @@ em.checked {
 .shouquan-info li{
 	overflow: hidden;
 	border-bottom: 1px solid #ddd;
-	margin: 0 15px;
+	margin: 0 0 0 15px;
 	height: 40px;
 	line-height: 40px;
 }
@@ -2384,7 +2386,7 @@ em.checked {
 .shouquan-info li label{
 	float: left;
 	width: 25%;
-	color: #666;
+	color: #333;
 }
 .shouquan-info li input{
 	border: none;
@@ -2408,16 +2410,17 @@ em.checked {
 	color: #666;
 }
 .shouquan-info li input[type='button']{
-	width: 30%;
+	width: 27%;
 	height: 25px;
 	line-height: 25px;
-	margin: 7px 0;
+	margin: 7px 5px 7px 0;
 	float: right;
 	padding: 0;
 	border: 1px solid #3a94fd;
 	border-radius: 5px;
 	background-color: #fff;
 	color: #666;
+	font-size: 13px;
 }
 .shouquan-succ{
 	vertical-align: middle;
@@ -2511,6 +2514,15 @@ em.checked {
 }
 .shouquan-info li .icon-right{
 	float: right;
+}
+.shouquan-info li span{
+	width: 70%;
+	float: left;
+	color: #666;
+	overflow: hidden;
+	overflow-wrap: normal;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .door-modal .modal-tit.n_bd{
 	border-bottom: none;

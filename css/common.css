@@ -1454,13 +1454,12 @@ i.check.mr5 {
 	font-size: 18px;
 }
 .ad-modal{
-	background-color: #f4f4f4;
-	margin: 0 15px;
-	padding: 30px 20px;
+	background-color: #fff7de;
+	padding: 10px 20px;
 }
 .ad-modal p{
 	text-align: center;
-	color: #ffae00;
+	color: #ff4e00;
 	font-size: 14px;
 }
 .ad-index{
