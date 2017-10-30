@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>预约详情</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/wy-layout.css"/>
+<link rel="stylesheet" type="text/css" href="css/yz-layout.css"/>
+<link rel="stylesheet" href="SUI/css/sm.min.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+</head>
+<body>
+<div class="page-group">
+  <div class="page page-current">
+    <header class="bar bar-nav header">
+      <a class="button button-link button-nav pull-left button-left-w-change" href="/demos/card" data-transition='slide-out'>
+        <span class="icon icon-left"></span>
+      </a>
+      <h1 class="title">预约详情</h1>
+    </header>
+    <div class="main content bx">
+      <div class="block">
+        <div class="tit">预约详情</div>
+        <div class="con">
+          <ul class="bx-info">
+            <li>
+              <label class="fl">预约编号：</label>
+              <span class="fl">00000023</span>
+            </li>
+            <li>
+              <label class="fl">预约项目：</label>
+              <span class="fl black">婚姻登记</span>
+            </li>
+            <li>
+              <label class="fl">预约时间：</label>
+              <span class="fl">2017-10-01 8:00~10:00</span>
+            </li>
+            <li>
+              <p class="tips blue">温馨提示：婚姻登记必须由本人亲自携带身份证复印件进行办理婚姻登记必须由本人亲自携带身份证复印件进行办理婚姻登记必须由本人亲自携带身份证复印件进行办理</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="block">
+        <div class="tit">当前状态</div>
+        <div class="con">
+          <!-- <p class="blue m0">审核中，请耐心等待!</p> -->
+          <!-- <p class="red m0">已取消!</p> -->
+          <p class="red m0">审核不通过！</p>
+        </div>
+      </div>
+      <div class="block">
+        <div class="tit">请确认您的信息</div>
+        <div class="con">
+          <ul class="bx-info">
+            <li>
+              <span class="fl black">申请人姓名：张三</span>
+            </li>
+            <li>
+              <span class="fl black">申请人手机号：13612345678</span>
+            </li>
+            <li>
+              <span class="fl black">申请人身份证号：1234567890x</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="block">
+        <div class="tit">反馈信息</div>
+        <div class="con">
+          <p class="m0">请带好您的身份证件按时来办理业务！请带好您的身份证件按时来办理业务！请带好您的身份证件按时来办理业务！请带好您的身份证件按时来办理业务！请带好您的身份证件按时来办理业务！</p>
+        </div>
+      </div>
+      <div class="yuyue-btn">
+        <input type="button" value="修改预约时间" onclick="return change_time();">
+        <input type="button" value="取消预约" onclick="return submit();">
+      </div>
+    </div>
+  </div>
+</div>
+<div id="bg-gray"></div>
+<div class="xq-modal" id="modal" style="display:none;">
+  <p class="modal-msg">是否确认取消预约？</p>
+  <p class="modal-btn">
+    <span class="yes">确认</span>
+    <span class="no">取消</span>
+  </p>
+</div>
+<div class="xq-modal change-time-modal" style="display:none;">
+  <div class="modal-con">
+    <div class="time-sel">
+      <select>
+        <option>请选择预约日期</option>
+        <option>2017-10-30</option>
+        <option>2017-10-31</option>
+      </select>
+      <i class="all_bg rili"></i>
+    </div>
+    <div class="time-sel">
+      <select>
+        <option>请选择预约时间段</option>
+        <option>8:00~11:00</option>
+        <option>13:00~17:00</option>
+      </select>
+      <i class="all_bg shizhong"></i>
+    </div>
+  </div>
+  <p class="modal-btn">
+    <span class="yes">确认</span>
+    <span class="no">取消</span>
+  </p>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function submit() {
+  var bggray = $("#bg-gray");
+  var modal = $("#modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+function change_time() {
+  var bggray = $("#bg-gray");
+  var modal = $(".change-time-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>
