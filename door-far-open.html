@@ -64,7 +64,22 @@
       </div>
     </div>
   </div>
-  <div class="zhifu">确定</div>
+  <div class="zhifu" onclick="return door_open();">确定</div>
 </div>
+<div id="bg-gray"></div>
+<div class="xq-modal door-open-modal" id="modal" style="display:none;">
+  <p class="">请求成功，请等待开门</p>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function door_open() {
+  var bggray = $("#bg-gray");
+  var modal = $(".door-open-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+</script>
 </body>
 </html>

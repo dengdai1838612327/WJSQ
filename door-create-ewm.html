@@ -61,12 +61,14 @@
       <div class="share-btm">
         <h6 class="tit">分享给好友</h6>
         <div class="con">
-          <div class="share-item">
-            <i class="all_bg_daishou wechat"></i>
+          <div class="share-item" onclick="return share_wechat();">
+            <!-- <i class="all_bg_daishou wechat"></i> -->
+            <i class="all_bg_daishou wechat gray"></i>
             <p>微信</p>
           </div>
           <div class="share-item" onclick="return submit();">
-            <i class="all_bg_daishou short-msg"></i>
+            <!-- <i class="all_bg_daishou short-msg"></i> -->
+            <i class="all_bg_daishou short-msg gray"></i>
             <p>短信</p>
           </div>
         </div>
@@ -79,11 +81,23 @@
   <i class="all_bg_daishou"></i>
   <p>短信已发送</p>
 </div>
+<div class="wechat-modal" style="display:none;">
+  <i class="all_bg_daishou"></i>
+  <p>点击右上角进行分享哦！</p>
+</div>
 <script src="js/jquery.min.js"></script>
 <script>
 function submit() {
   var bggray = $("#bg-gray");
   var modal = $(".msg-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+function share_wechat() {
+  var bggray = $("#bg-gray");
+  var modal = $(".wechat-modal");
   bggray.css("height", window.screen.height);
   bggray.css("width", window.screen.width);
   bggray.show();

@@ -2842,6 +2842,9 @@ em.img-bg{
 	margin: 10px;
 	font-size: 12px;
 }
+.jcdl-tips.red{
+	color: #f00;
+}
 .jcdl-btn{
 	margin: 0 10px 10px;
 }
