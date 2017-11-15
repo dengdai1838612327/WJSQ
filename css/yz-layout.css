@@ -1324,6 +1324,9 @@ i.check {
 	padding: 0;
 	border-radius: 5px;
 }
+.create-ewm2-btn input.one{
+	margin: 0 26%;
+}
 .create-ewm2-btn input.fill{
 	background-color: #2b8cfa;
 	color: #fff;
@@ -2194,6 +2197,9 @@ em.checked {
 .yibao-list .yibao-con{
 	text-indent: 28px;
 	margin: 0;
+}
+.yibao-list p a{
+	text-decoration: underline;
 }
 .yibao-list table{
 	margin-bottom: 15px;
@@ -3121,4 +3127,11 @@ em.img-bg{
 .sel-list ul li.on{
 	background-color: #3a94fd;
 	color: #fff;
+}
+.yuyue-list.shouquan-info .tips{
+	color: #333;
+}
+.yuyue-list .info-form p{
+	margin: 0;
+	color: #666;
 }
