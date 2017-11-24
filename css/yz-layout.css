@@ -2324,7 +2324,7 @@ em.checked {
 	width: 35%;
 }
 .door-ewm .tit{
-	background-color: #f2f2f2;
+	background-color: #fff;
 	height: 45px;
 	line-height: 45px;
 	margin: 20px 15px 0;
@@ -2335,7 +2335,7 @@ em.checked {
 }
 .door-ewm .con{
 	background-color: #fff;
-	margin: 0 15px 20px;
+	margin: -1px 15px 20px;
 	border-radius: 0 0 3px 3px;
 }
 .door-ewm .con .ewm{
@@ -2367,9 +2367,8 @@ em.checked {
 	background-color: #fff;
 }
 .sq-list-link{
+	display: block;
 	width: 100%;
-	position: fixed;
-	bottom: 0;
 	color: #fff;
 	text-align: center;
 	text-decoration: underline;
@@ -3134,4 +3133,28 @@ em.img-bg{
 .yuyue-list .info-form p{
 	margin: 0;
 	color: #666;
+}
+/*门禁二维码点击开门*/
+.bg-repeat-door .page{
+	background: url(../images/bg-repeat-door.png) 0 0 repeat-x;
+	background-size: contain;
+}
+.bg-repeat-door .page .bar.header{
+	background-color: #117cd9;
+}
+.bg-repeat-door .page .bar:after{
+	height: 0;
+}
+.point-open{
+	text-align: center;
+	width: 150px;
+	margin: 0 auto;
+}
+.point-open a{
+	display: block;
+	color: #fff;
+}
+.point-open a span{
+	display: block;
+	font-size: 14px;
 }
