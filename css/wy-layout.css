@@ -1590,10 +1590,11 @@ header a i.icon-nme {
   -webkit-flex: 1;
   flex: 1;
   padding-top: 6px;
-  padding-left: 20px
+  padding-left: 5px
 }
 .fk-card .after span {
-  font-size: 12px
+  font-size: 12px;
+  word-break: break-all;
 }
 .fk-card .user-left {
   background: url(../images/userwhite.png) no-repeat;
@@ -1608,7 +1609,7 @@ header a i.icon-nme {
 }
 .fk-label {
   display: inline-block;
-  width: 85px;
+  width: 80px;
   text-align: right
 }
 /*拆分支付*/
@@ -1801,6 +1802,9 @@ header a i.icon-nme {
   margin: 0;
   font-size: 14px;
   color: #666;
+}
+.zd-item p span em{
+  color: #f00;
 }
 .bg-gray {
     width: 100%;
@@ -2037,4 +2041,51 @@ header a i.icon-nme {
   color: #ff7714;
   font-size: 13px;
   padding-left: 5px;
+}
+.hbzf-jflist .wait-list dd.pl20{
+  padding-left: 20px;
+}
+.hbzf-jflist .wait-list dt.remark-dt{
+  height: auto;
+  overflow: hidden;
+}
+.hbzf-jflist .wait-list dt .fee-remark{
+  float: left;
+  clear: both;
+  margin: 0;
+  line-height: 15px;
+  color: #f60;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+/*托收管理*/
+.tsgl.address .fk-info{
+  width: 60%;
+}
+.tsgl.address .fk-img img{
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 50%;
+  margin-top: -27px;
+}
+.tsgl .jf-info .detail{
+  height: auto;
+}
+.tsgl .jf-info .detail span{
+  display: block;
+  line-height: 25px;
+  width: 100%;
+  overflow: hidden;
+  overflow-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fk-index .tsgl .novi{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: -20px;
 }

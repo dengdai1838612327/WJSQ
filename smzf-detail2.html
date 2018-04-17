@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>交易明细</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/yz-layout.css"/>
+<link rel="stylesheet" href="SUI/css/sm.min.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+</head>
+<body class="bfff">
+<div class="page-group">
+  <div class="page page-current">
+    <header class="bar bar-nav header">
+      <a class="button button-link button-nav pull-left button-left-w-change" href="/demos/card" data-transition='slide-out'>
+        <span class="icon icon-left"></span>
+      </a>
+      <h1 class="title">交易明细</h1>
+    </header>
+    <div class="content">
+      <div class="smzf-detail2">
+        <ul>
+          <li>
+            <label>订单编号</label>
+            <span>222555666</span>
+          </li>
+          <li>
+            <label>订单金额</label>
+            <span>￥30.00</span>
+          </li>
+          <li>
+            <label>优惠金额</label>
+            <span>￥3.00</span>
+          </li>
+          <li>
+            <label>支付时间</label>
+            <span>2017-06-09</span>
+          </li>
+          <li>
+            <label>支付方式</label>
+            <span>支付宝扫码</span>
+          </li>
+          <li>
+            <label>收款方</label>
+            <span>万家社区</span>
+          </li>
+          <li>
+            <label>收款类型</label>
+            <span>维修费</span>
+          </li>
+          <li>
+            <label>备注</label>
+            <span>上海今晨物业上海今晨物业上海今晨物业上海今晨物业</span>
+          </li>
+          <!-- <li class="z">
+            <img src="images/z.png" width="80" height="80">
+          </li> -->
+        </ul>
+        <div class="share-link">
+          <a href="###" onclick="return goods_sel();">
+            <i class="all_bg_daishou"></i>
+            <span>短信分享交易凭据</span>
+          </a>
+        </div>
+        <div class="pingju-ewm">
+          <img src="images/vericode.png">
+          <span>微信扫码查看交易凭据</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="bg-gray"></div>
+<div class="sel-modal">
+  <div class="sel-top">
+    <p class="h4">输入手机号</p>
+  </div>
+  <div class="name_list">
+    <input name="" type="text" class="tel-input">
+  </div>
+  <div class="sel-btn">
+    <input value="取消" class="btn qx_btn" type="button">
+    <input value="确定" class="btn" type="button">
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function goods_sel() {
+  var bggray = $("#bg-gray");
+  var modal = $(".sel-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>
